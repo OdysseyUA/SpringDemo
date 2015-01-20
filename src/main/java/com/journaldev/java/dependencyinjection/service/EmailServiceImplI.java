@@ -1,6 +1,6 @@
 package com.journaldev.java.dependencyinjection.service;
 
-public class EmailServiceImpl implements MessageService {
+public class EmailServiceImplI implements IMessageService {
 
     @Override
     public void sendMessage(String msg, String rec) {

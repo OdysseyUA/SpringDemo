@@ -1,12 +1,12 @@
 package com.journaldev.java.dependencyinjection.consumer;
 
-import com.journaldev.java.dependencyinjection.service.MessageService;
+import com.journaldev.java.dependencyinjection.service.IMessageService;
 
-public class MyDIApplication implements Consumer{
+public class MyDIApplication implements IConsumer {
 
-    private MessageService service;
+    private IMessageService service;
 
-    public MyDIApplication(MessageService svc){
+    public MyDIApplication(IMessageService svc){
         this.service=svc;
     }
 

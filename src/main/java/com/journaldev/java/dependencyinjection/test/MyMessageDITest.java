@@ -1,9 +1,9 @@
 package com.journaldev.java.dependencyinjection.test;
 
-import com.journaldev.java.dependencyinjection.consumer.Consumer;
-import com.journaldev.java.dependencyinjection.injector.EmailServiceInjector;
-import com.journaldev.java.dependencyinjection.injector.MessageServiceInjector;
-import com.journaldev.java.dependencyinjection.injector.SMSServiceInjector;
+import com.journaldev.java.dependencyinjection.consumer.IConsumer;
+import com.journaldev.java.dependencyinjection.injector.EmailServiceInjectorI;
+import com.journaldev.java.dependencyinjection.injector.IMessageServiceInjector;
+import com.journaldev.java.dependencyinjection.injector.SMSServiceInjectorI;
 
 public class MyMessageDITest {
 
@@ -12,16 +12,16 @@ public class MyMessageDITest {
         String email = "odyssey@abc.com";
         String phone = "4088888888";
 
-        MessageServiceInjector injector = null;
-        Consumer app = null;
+        IMessageServiceInjector injector = null;
+        IConsumer app = null;
 
         //Send email
-        injector = new EmailServiceInjector();
+        injector = new EmailServiceInjectorI();
         app = injector.getConsumer();
         app.processMessages(msg, email);
 
         //Send SMS
-        injector = new SMSServiceInjector();
+        injector = new SMSServiceInjectorI();
         app = injector.getConsumer();
         app.processMessages(msg, phone);
     }

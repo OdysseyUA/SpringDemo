@@ -1,24 +1,24 @@
-import com.journaldev.java.dependencyinjection.consumer.Consumer;
+import com.journaldev.java.dependencyinjection.consumer.IConsumer;
 import com.journaldev.java.dependencyinjection.consumer.MyDIApplication;
-import com.journaldev.java.dependencyinjection.injector.MessageServiceInjector;
-import com.journaldev.java.dependencyinjection.service.MessageService;
+import com.journaldev.java.dependencyinjection.injector.IMessageServiceInjector;
+import com.journaldev.java.dependencyinjection.service.IMessageService;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
 public class MyDIApplicationJUnitTest {
 
-    private MessageServiceInjector injector;
+    private IMessageServiceInjector injector;
 
     @Before
     public void setUp(){
         //mock the injector with anonymous class
-        injector = new MessageServiceInjector() {
+        injector = new IMessageServiceInjector() {
 
             @Override
-            public Consumer getConsumer() {
+            public IConsumer getConsumer() {
                 //mock the message service
-                return new MyDIApplication(new MessageService() {
+                return new MyDIApplication(new IMessageService() {
 
                     @Override
                     public void sendMessage(String msg, String rec) {
@@ -32,8 +32,8 @@ public class MyDIApplicationJUnitTest {
 
     @Test
     public void test() {
-        Consumer consumer = injector.getConsumer();
-        consumer.processMessages("Hi Odyssey", "odyssey@abc.com");
+        IConsumer IConsumer = injector.getConsumer();
+        IConsumer.processMessages("Hi Odyssey", "odyssey@abc.com");
     }
 
     @After

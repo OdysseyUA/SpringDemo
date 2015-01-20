@@ -1,6 +1,6 @@
 package com.journaldev.java.dependencyinjection.consumer;
 
-public interface Consumer {
+public interface IConsumer {
 
     void processMessages(String msg, String rec);
 }

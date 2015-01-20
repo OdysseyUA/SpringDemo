@@ -1,6 +1,6 @@
 package com.journaldev.java.dependencyinjection.service;
 
-public interface MessageService {
+public interface IMessageService {
 
     void sendMessage(String msg, String rec);
 }
