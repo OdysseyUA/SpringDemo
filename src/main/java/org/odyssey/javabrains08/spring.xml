@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <alias name="triangle" alias="triangle-alias" />
+    <alias name="zeroPoint" alias="zeroPoint-alias" />
+
+
+	<bean id="triangle" class="org.odyssey.javabrains08.Triangle" >
+
+        <property name="pointA" ref="zeroPoint-alias"/>
+        <!--<property name="pointA" ref="zeroPoint"/>-->
+
+
+        <!--If we need to use object in specific behaviour, not in general (by whole class) -->
+        <property name="pointB">
+            <bean class="org.odyssey.javabrains08.Point">
+                <property name="x" value="-20"/>
+                <property name="y" value="0"/>
+            </bean>
+        </property>
+        <property name="pointC">
+            <bean id="point3" class="org.odyssey.javabrains08.Point">
+                <property name="x" value="20"/>
+                <property name="y" value="0"/>
+            </bean>
+        </property>
+
+    </bean>
+
+
+    <bean id="zeroPoint" class="org.odyssey.javabrains08.Point">
+        <property name="x" value="0"/>
+        <property name="y" value="0"/>
+    </bean>
+
+
+    
+
+
+
+</beans>
