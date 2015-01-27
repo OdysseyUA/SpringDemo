@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+	<bean id="triangle" class="org.odyssey.javabrains09.Triangle" >
+
+        <!--This used in case of LIST-->
+        <!--(bean for point3 must be uncomment, see below-->
+      <!--<property name="lpoints">-->
+          <!--<list>-->
+              <!--<ref bean="zeroPoint" />-->
+              <!--<ref bean="point2" />-->
+              <!--<ref bean="point3" />-->
+          <!--</list>-->
+      <!--</property>-->
+
+
+      <!--This used in case of MAP-->
+        <property name="mpoints">
+            <map>
+                <entry key="Point Zero" value-ref="zeroPoint"/>
+                <entry key="Point One" value-ref="point2"/>
+                <entry key="Point Two">
+                    <bean id="point3" class="org.odyssey.javabrains09.Point">
+                        <property name="x" value="20"/>
+                        <property name="y" value="0"/>
+                    </bean>
+                </entry>
+            </map>
+        </property>
+
+    </bean>
+
+
+    <bean id="zeroPoint" class="org.odyssey.javabrains09.Point">
+        <property name="x" value="0"/>
+        <property name="y" value="0"/>
+    </bean>
+
+    <bean id="point2" class="org.odyssey.javabrains09.Point">
+        <property name="x" value="-20"/>
+        <property name="y" value="0"/>
+    </bean>
+
+
+    <!--Uncomment in case of LIST-->
+    <!--<bean id="point3" class="org.odyssey.javabrains09.Point">-->
+        <!--<property name="x" value="20"/>-->
+        <!--<property name="y" value="0"/>-->
+    <!--</bean>-->
+
+
+</beans>
