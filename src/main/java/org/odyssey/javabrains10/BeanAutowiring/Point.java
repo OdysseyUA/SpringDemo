@@ -1,4 +1,4 @@
-package org.odyssey.javabrains12;
+package org.odyssey.javabrains10.BeanAutowiring;
 
 public class Point {
 	

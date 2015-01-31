@@ -13,21 +13,21 @@
     </bean>
 
 
-    <bean id="zeroPoint" class="org.odyssey.javabrains07.Point">
+    <bean id="zeroPoint" class="org.odyssey.javabrains07.InjectingObjects.Point">
         <property name="x" value="0"/>
         <property name="y" value="0"/>
     </bean>
 
 
 
-    <bean id="point2" class="org.odyssey.javabrains07.Point">
+    <bean id="point2" class="org.odyssey.javabrains07.InjectingObjects.Point">
         <property name="x" value="-20"/>
         <property name="y" value="0"/>
     </bean>
 
 
 
-    <bean id="point3" class="org.odyssey.javabrains07.Point">
+    <bean id="point3" class="org.odyssey.javabrains07.InjectingObjects.Point">
         <property name="x" value="20"/>
         <property name="y" value="0"/>
     </bean>

@@ -1,4 +1,4 @@
-package org.odyssey.javabrains09;
+package org.odyssey.javabrains09.InitializingCollections;
 
 import java.util.Iterator;
 import java.util.List;

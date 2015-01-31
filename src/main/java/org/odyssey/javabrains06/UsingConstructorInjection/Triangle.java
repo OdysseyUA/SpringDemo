@@ -1,4 +1,4 @@
-package org.odyssey.javabrains06;
+package org.odyssey.javabrains06.UsingConstructorInjection;
 
 public class Triangle {
 

@@ -1,16 +1,12 @@
-package org.odyssey.javabrains12;
+package org.odyssey.javabrains10.BeanAutowiring;
 
-import org.springframework.beans.BeansException;
-import org.springframework.beans.factory.BeanNameAware;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.ApplicationContextAware;
+import org.odyssey.javabrains10.BeanAutowiring.Point;
 
-public class Triangle implements ApplicationContextAware, BeanNameAware {
+public class Triangle {
 	
 	private Point pointA;
 	private Point pointB;
 	private Point pointC;
-	private ApplicationContext context = null;
 
 	
 
@@ -55,16 +51,6 @@ public class Triangle implements ApplicationContextAware, BeanNameAware {
 		System.out.println("Point C = (" + getPointC().getX() + ", " + getPointC().getY() + ")");
 		
     }
-
-	public void setApplicationContext(ApplicationContext context)
-			throws BeansException {
-		this.context = context;		
-	}
-
-	public void setBeanName(String beanName) {
-		System.out.println("Bean name is: " + beanName);
-		
-	}
 
 	
 }

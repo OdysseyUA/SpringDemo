@@ -1,4 +1,4 @@
-package org.odyssey.javabrains08;
+package org.odyssey.javabrains08.InnerBeansAliasesAndIdref;
 
 public class Point {
     private int x;

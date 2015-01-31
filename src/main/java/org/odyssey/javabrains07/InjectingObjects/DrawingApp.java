@@ -1,11 +1,10 @@
-package org.odyssey.javabrains09;
+package org.odyssey.javabrains07.InjectingObjects;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
- * Collection (List) initialization.
- * Collection (MAP) case implemented (and initialized in bean).
+ * Object injection (by ref)
  */
 public class DrawingApp {
 

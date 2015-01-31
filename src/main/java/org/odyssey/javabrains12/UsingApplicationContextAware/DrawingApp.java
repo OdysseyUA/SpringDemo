@@ -1,4 +1,4 @@
-package org.odyssey.javabrains12;
+package org.odyssey.javabrains12.UsingApplicationContextAware;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

@@ -24,17 +24,17 @@
     </bean>
 
 	
-	<bean id="pointA" class="org.odyssey.javabrains10.Point" >
+	<bean id="pointA" class="org.odyssey.javabrains10.BeanAutowiring.Point" >
 		<property name="x" value="0" />
 		<property name="y" value="0" />
 	</bean>
 	
-	<bean id="pointB" class="org.odyssey.javabrains10.Point" >
+	<bean id="pointB" class="org.odyssey.javabrains10.BeanAutowiring.Point" >
 		<property name="x" value="20" />
 		<property name="y" value="0" />
 	</bean>
 	
-	<bean id="pointC" class="org.odyssey.javabrains10.Point" >
+	<bean id="pointC" class="org.odyssey.javabrains10.BeanAutowiring.Point" >
 		<property name="x" value="0" />
 		<property name="y" value="-20" />
 	</bean>

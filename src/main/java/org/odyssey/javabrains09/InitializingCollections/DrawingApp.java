@@ -1,10 +1,11 @@
-package org.odyssey.javabrains06;
+package org.odyssey.javabrains09.InitializingCollections;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
- * CONSTRUCTOR DI
+ * Collection (List) initialization.
+ * Collection (MAP) case implemented (and initialized in bean).
  */
 public class DrawingApp {
 

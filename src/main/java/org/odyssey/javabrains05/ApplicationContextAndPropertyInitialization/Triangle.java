@@ -1,4 +1,4 @@
-package org.odyssey.javabrains05;
+package org.odyssey.javabrains05.ApplicationContextAndPropertyInitialization;
 
 public class Triangle {
 

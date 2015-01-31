@@ -1,4 +1,4 @@
-package org.odyssey.javabrains08;
+package org.odyssey.javabrains08.InnerBeansAliasesAndIdref;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

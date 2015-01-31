@@ -1,4 +1,4 @@
-package org.odyssey.javabrains09;
+package org.odyssey.javabrains07.InjectingObjects;
 
 public class Point {
     private int x;

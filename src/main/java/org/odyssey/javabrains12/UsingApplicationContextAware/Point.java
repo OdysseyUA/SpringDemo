@@ -1,4 +1,4 @@
-package org.odyssey.javabrains10;
+package org.odyssey.javabrains12.UsingApplicationContextAware;
 
 public class Point {
 	

@@ -1,4 +1,4 @@
-package org.odyssey.javabrains04;
+package org.odyssey.javabrains04.WritingCodeUsingTheBeanFactory;
 
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanFactory;

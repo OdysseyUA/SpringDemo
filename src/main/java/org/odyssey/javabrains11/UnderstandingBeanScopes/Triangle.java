@@ -1,4 +1,4 @@
-package org.odyssey.javabrains11;
+package org.odyssey.javabrains11.UnderstandingBeanScopes;
 
 public class Triangle {
 	

@@ -1,4 +1,4 @@
-package org.odyssey.javabrains07;
+package org.odyssey.javabrains09.InitializingCollections;
 
 public class Point {
     private int x;

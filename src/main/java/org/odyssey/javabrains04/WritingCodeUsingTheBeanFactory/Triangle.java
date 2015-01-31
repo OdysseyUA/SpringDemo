@@ -1,4 +1,4 @@
-package org.odyssey.javabrains04;
+package org.odyssey.javabrains04.WritingCodeUsingTheBeanFactory;
 
 public class Triangle {
 	

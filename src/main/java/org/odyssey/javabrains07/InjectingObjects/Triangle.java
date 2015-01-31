@@ -1,4 +1,6 @@
-package org.odyssey.javabrains07;
+package org.odyssey.javabrains07.InjectingObjects;
+
+import org.odyssey.javabrains07.InjectingObjects.Point;
 
 public class Triangle {
 
