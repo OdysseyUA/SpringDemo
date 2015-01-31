@@ -17,7 +17,7 @@
 
 
 
-    <bean id="triangle" class="org.odyssey.javabrains10.Triangle" autowire="constructor">
+    <bean id="triangle" class="org.odyssey.javabrains10.BeanAutowiring.Triangle" autowire="constructor">
         <constructor-arg ref="pointA"/>
         <constructor-arg ref="pointB"/>
         <constructor-arg ref="pointC"/>

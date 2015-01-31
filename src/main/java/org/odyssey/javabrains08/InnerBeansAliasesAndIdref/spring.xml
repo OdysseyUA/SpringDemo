@@ -9,7 +9,7 @@
     <alias name="zeroPoint" alias="zeroPoint-alias" />
 
 
-	<bean id="triangle" class="org.odyssey.javabrains08.Triangle" >
+	<bean id="triangle" class="org.odyssey.javabrains08.InnerBeansAliasesAndIdref.Triangle" >
 
         <property name="pointA" ref="zeroPoint-alias"/>
         <!--<property name="pointA" ref="zeroPoint"/>-->
@@ -17,13 +17,13 @@
 
         <!--If we need to use object in specific behaviour, not in general (by whole class) -->
         <property name="pointB">
-            <bean class="org.odyssey.javabrains08.Point">
+            <bean class="org.odyssey.javabrains08.InnerBeansAliasesAndIdref.Point">
                 <property name="x" value="-20"/>
                 <property name="y" value="0"/>
             </bean>
         </property>
         <property name="pointC">
-            <bean id="point3" class="org.odyssey.javabrains08.Point">
+            <bean id="point3" class="org.odyssey.javabrains08.InnerBeansAliasesAndIdref.Point">
                 <property name="x" value="20"/>
                 <property name="y" value="0"/>
             </bean>
@@ -32,7 +32,7 @@
     </bean>
 
 
-    <bean id="zeroPoint" class="org.odyssey.javabrains08.Point">
+    <bean id="zeroPoint" class="org.odyssey.javabrains08.InnerBeansAliasesAndIdref.Point">
         <property name="x" value="0"/>
         <property name="y" value="0"/>
     </bean>

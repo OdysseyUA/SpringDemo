@@ -6,7 +6,7 @@
     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
     
     
-	<bean id="triangle" class="org.odyssey.javabrains05.Triangle" >
+	<bean id="triangle" class="org.odyssey.javabrains05.ApplicationContextAndPropertyInitialization.Triangle" >
         <property name="type" value="flat" />
     </bean>
 

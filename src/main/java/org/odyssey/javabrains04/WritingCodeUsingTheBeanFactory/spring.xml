@@ -6,6 +6,6 @@
     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
     
     
-	<bean id="triangle" class="org.odyssey.javabrains04.Triangle" />
+	<bean id="triangle" class="org.odyssey.javabrains04.WritingCodeUsingTheBeanFactory.Triangle" />
 
 </beans>
