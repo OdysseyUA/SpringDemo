@@ -7,7 +7,9 @@
     
     
 	<bean id="triangle" class="org.odyssey.javabrains11.UnderstandingBeanScopes.Triangle" scope="prototype">
-		
+        <property name="pointA" ref="pointA"/>
+        <property name="pointB" ref="pointB"/>
+        <property name="pointC" ref="pointC"/>
 	</bean>
 	
 	
