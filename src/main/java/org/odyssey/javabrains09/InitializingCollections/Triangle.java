@@ -1,23 +1,25 @@
 package org.odyssey.javabrains09.InitializingCollections;
 
-import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
 public class Triangle {
 
-    private List<Point> points;
+    private List<Point> lpoints;
     private Map<String, Point> mpoints;
 
 
 
     public  void draw(){
 
+        System.out.println("List:");
         //Used in case of LIST (spring-xml need to be changed)
-        //for(Point point : points) {
-        //    System.out.println("Point (" + point.getX() + "," + point.getY() + ");");
-        //}
+        for(Point point : lpoints) {
+            System.out.println("Point (" + point.getX() + "," + point.getY() + ");");
+        }
 
+
+        System.out.println("\nMap:");
         //Used in case of MAP (spring-xml need to be changed)
         for (Map.Entry<String, Point> entry : mpoints.entrySet()) {
             System.out.println(entry.getKey() + ": (" + entry.getValue().getX() + "," + entry.getValue().getY() + ");");
@@ -25,12 +27,12 @@ public class Triangle {
     }
 
 
-    public List<Point> getPoints() {
-        return points;
+    public List<Point> getLpoints() {
+        return lpoints;
     }
 
-    public void setPoints(List<Point> points) {
-        this.points = points;
+    public void setLpoints(List<Point> lpoints) {
+        this.lpoints = lpoints;
     }
 
 
