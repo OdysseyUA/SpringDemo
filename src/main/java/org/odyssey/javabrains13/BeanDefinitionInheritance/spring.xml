@@ -7,19 +7,23 @@
     
     
     <bean id="parenttriangle" class="org.odyssey.javabrains13.BeanDefinitionInheritance.Triangle" abstract="true">
-        <property name="points">
+        <property name="lpoints">
 	        <list>
 	        	<ref bean="pointA" />
 	        </list>
         </property>
+
+        <property name="pointB" ref="pointB"/>
+        <property name="pointC" ref="pointC"/>
     </bean>
     
     
         
 	<bean id="triangle1" class="org.odyssey.javabrains13.BeanDefinitionInheritance.Triangle" parent="parenttriangle">
- <property name="points">
+        <property name="lpoints">
 	        <list merge="true"> <!-- merge child bean with parent bean -->
 	        	<ref bean="pointB" />
+                <ref bean="pointC" />
 	        </list>
         </property>
 	</bean>

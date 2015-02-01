@@ -9,7 +9,7 @@ import org.springframework.context.ApplicationContextAware;
 
 public class Triangle implements ApplicationContextAware, BeanNameAware {
 	
-	private List<Point> points;
+	private List<Point> lpoints;
 	private Point pointB;
 	private Point pointC;
 	private ApplicationContext context = null;
@@ -27,12 +27,12 @@ public class Triangle implements ApplicationContextAware, BeanNameAware {
 //	}
 //
 	
-	public List<Point> getPoints() {
-		return points;
+	public List<Point> getLpoints() {
+		return lpoints;
 	}
 
-	public void setPoints(List<Point> points) {
-		this.points = points;
+	public void setLpoints(List<Point> lpoints) {
+		this.lpoints = lpoints;
 	}
 	
 		
@@ -63,7 +63,7 @@ public class Triangle implements ApplicationContextAware, BeanNameAware {
 	public  void draw(){
 		
 //		System.out.println("Point A = (" + getPointA().getX() + ", " + getPointA().getY() + ")");
-		for(Point p : points)
+		for(Point p : lpoints)
 			System.out.println("Point A = (" +p.getX() + ", " +p.getY() + ")");
 		System.out.println("Point B = (" + getPointB().getX() + ", " + getPointB().getY() + ")");
 		System.out.println("Point C = (" + getPointC().getX() + ", " + getPointC().getY() + ")");
