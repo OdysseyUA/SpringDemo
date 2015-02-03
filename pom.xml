@@ -24,6 +24,14 @@
         <!-- JUnit version -->
         <junit-version>4.12</junit-version>
 
+
+        <!--AspectJ-->
+        <AspectJ.Runtime>1.8.5</AspectJ.Runtime>
+        <AspectJ.Weaver>1.8.5</AspectJ.Weaver>
+        <AspectJ.Tools>1.8.5</AspectJ.Tools>
+        <AOP.Alliance>1.0</AOP.Alliance>
+
+
     </properties>
 
     <dependencies>
@@ -59,6 +67,41 @@
             <version>${junit-version}</version>
             <scope>test</scope>
         </dependency>
+
+
+
+
+        <!-- Spring AOP + AspectJ -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aop</artifactId>
+            <version>${spring-framework.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjrt</artifactId>
+            <version>${AspectJ.Runtime}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>${AspectJ.Weaver}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjtools</artifactId>
+            <version>${AspectJ.Tools}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>aopalliance</groupId>
+            <artifactId>aopalliance</artifactId>
+            <version>${AOP.Alliance}</version>
+        </dependency>
+
 
     </dependencies>
 </project>
