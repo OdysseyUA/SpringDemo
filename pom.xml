@@ -31,6 +31,8 @@
         <AspectJ.Tools>1.8.5</AspectJ.Tools>
         <AOP.Alliance>1.0</AOP.Alliance>
 
+        <Code.Generation.Library>3.1</Code.Generation.Library>
+        <ASM.Core>3.3.1</ASM.Core>
 
     </properties>
 
@@ -102,6 +104,19 @@
             <version>${AOP.Alliance}</version>
         </dependency>
 
+
+
+        <dependency>
+            <groupId>cglib</groupId>
+            <artifactId>cglib</artifactId>
+            <version>${Code.Generation.Library}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>asm</groupId>
+            <artifactId>asm</artifactId>
+            <version>${ASM.Core}</version>
+        </dependency>
 
     </dependencies>
 </project>
